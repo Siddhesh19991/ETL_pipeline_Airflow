@@ -1,6 +1,6 @@
 # ETL_pipeline_Airflow
 
-This project sets up an ETL (Extract, Transform, Load) pipeline to collect weather data for Linköping city in Sweden using the OpenWeather API. The pipeline is automated with Apache Airflow and hosted on an Amazon EC2 instance. Below are the steps to set up the environment, install dependencies, and configure the ETL pipeline. 
+This project sets up an ETL (Extract, Transform, Load) pipeline to collect weather data for Linköping City in Sweden using the [OpenWeather API](https://openweathermap.org/). The pipeline is automated with Apache Airflow and hosted on an Amazon EC2 instance. Below are the steps to set up the environment, install dependencies, and configure the ETL pipeline. 
 
 <img width="744" alt="Screenshot 2024-07-27 at 8 44 47 PM" src="https://github.com/user-attachments/assets/0e01909a-22a5-4b79-ab37-fa4d4cf294a7">
 
@@ -55,7 +55,7 @@ The ETL pipeline includes the following tasks:
 3. Transform and Load: Transform the data into the desired format and load it into an S3 bucket for further analysis, dashboard creation, or machine learning.
 
 
-Note: To get a better understanding of how to do transform the data, I entered the API link into the browser to see how the response looks like: 
+Note: To get a better understanding of how to transform the data, I entered the API link into the browser to see what the response looks like: 
 <img width="1588" alt="Screenshot 2024-07-27 at 8 33 09 PM" src="https://github.com/user-attachments/assets/673dbd19-9691-49f9-bdf0-91973b26ea61">
 
 
