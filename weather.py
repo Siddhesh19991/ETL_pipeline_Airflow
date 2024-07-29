@@ -87,7 +87,7 @@ with DAG("weather_dag",
   extract_data = SimpleHttpOperator(
     task_id = "extract_data",
     http_conn_id = "weather_api",  #Airflow connection to https://api.openweathermap.org
-    endpoint = "/data/2.5/weather?q=Linköping&appid=9876a360d8b8be2e969221da0719b3fa",
+    endpoint = "/data/2.5/weather?q=Linköping&appid=<apikey>",
     method = "GET",
     response_filter = lambda r: json.loads(r.text),
     log_response = True
